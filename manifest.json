@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "test custom element in firefox addon",
+  "content_scripts": [
+    {
+      "js": [
+        "js/content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_title": "test",
+    "default_icon": "asset/logo.png"
+  },
+  "icons": {
+    "48": "asset/logo.png",
+    "64": "asset/logo.png",
+    "128": "asset/logo.png"
+  },
+  "manifest_version": 2
+}
